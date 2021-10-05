@@ -1,4 +1,9 @@
 ### Informações
 
-- Utilizar jre8
-- Uma Build esta disponivel dentro de diretorio "dist"
+Backend
+- Utilizar jre8 e maven
+
+Frontend
+- Utilizado ReactJS
+
+* Uma Build esta pronta dentro de diretorio "dist"

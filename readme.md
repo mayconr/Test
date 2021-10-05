@@ -6,4 +6,5 @@ Backend
 Frontend
 - Utilizado ReactJS
 
-* Uma Build esta pronta dentro de diretorio "dist"
+
+### Uma Build esta pronta dentro de diretorio "dist".

@@ -21,31 +21,15 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.name }} == 'test'
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    runs-on: ubuntu-latest  
     steps:    
       # Runs a single command using the runners shell
       - name: Run a one-line script 
-        run: echo Hello, world!
+        if: ${{ github.event.inputs.name }} == 'test'
+        run: echo Test
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        if: ${{ github.event.inputs.name }} == 'prod'
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-  build2:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.name }} == 'prod'
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:    
-      # Runs a single command using the runners shell
-      - name: Run a one-line script 
-        run: echo teste
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo add here
-          echo new teste
+          echo Prod 

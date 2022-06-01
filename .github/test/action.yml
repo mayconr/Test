@@ -9,4 +9,5 @@ runs:
   using: "composite"
   steps:
     - name: teste
+      shell: bash
       run: echo maycon

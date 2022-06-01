@@ -10,8 +10,8 @@ on:
         type: choice
         description: Who to greet
         options: 
-        - test
-        - prod
+        - 'test'
+        - 'prod'
   
 env:
   CANCEL: true

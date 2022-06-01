@@ -1,0 +1,12 @@
+name: CI
+
+inputs:
+  name:     
+    description: "AWS region to use"
+    required: true  
+  
+runs:
+  using: "composite"
+  steps:
+    - name: teste
+      run: echo maycon

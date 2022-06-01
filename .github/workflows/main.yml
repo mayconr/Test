@@ -25,11 +25,11 @@ jobs:
     steps:    
       # Runs a single command using the runners shell
       - name: Run a one-line script 
-        if: ${{ github.event.inputs.name }} == 'test'
+        if: $CANCEL == true
         run: echo Test
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        if: ${{ github.event.inputs.name }} == 'prod'
+        if: $CANCEL == false
         run: |
           echo Prod 
